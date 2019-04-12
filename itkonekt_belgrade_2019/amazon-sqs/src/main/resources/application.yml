@@ -1,0 +1,22 @@
+cloud.aws.credentials.accessKey:
+cloud.aws.credentials.secretKey:
+cloud.aws.credentials.instanceProfile: false
+cloud.aws.region.static: eu-west-1
+
+sqs.queue: memory
+magicHat.host: http://localhost:8081
+
+localstack:
+  sns:
+    url: http://localhost:4575
+  sqs:
+    url: http://localhost:4576
+
+cloud:
+  aws:
+    stack:
+      auto: false
+---
+
+spring.profiles: prod
+cloud.aws.credentials.instanceProfile: true

@@ -1,0 +1,36 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.0.M1'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.conference'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/snapshot' }
+	maven { url 'https://repo.spring.io/milestone' }
+}
+
+ext {
+	set('springCloudVersion', 'Greenwich.BUILD-SNAPSHOT')
+}
+
+dependencies {
+	compileOnly 'org.projectlombok:lombok:1.18.6'
+	annotationProcessor 'org.projectlombok:lombok:1.18.6'
+	compile("org.springframework.boot:spring-boot-starter-web")
+	implementation 'org.springframework.cloud:spring-cloud-starter-aws'
+	implementation 'org.springframework.cloud:spring-cloud-starter-aws-messaging'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
