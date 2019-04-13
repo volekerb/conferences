@@ -14,6 +14,7 @@ public class RouterConfiguration {
     @Bean
     public RouterFunction<ServerResponse> route(SpellHandler spellHandler) {
         return RouterFunctions
-                .route(RequestPredicates.GET("/hello").and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), spellHandler::hello);
+                .route(RequestPredicates.GET("/hello")
+                        .and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), spellHandler::hello);
     }
 }
