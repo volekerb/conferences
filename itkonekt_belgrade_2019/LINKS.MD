@@ -4,3 +4,5 @@
 3. [Links about RSocket](https://github.com/linux-china/awesome-rsocket)
 4. [Video with Josh Long and Mark Hecler](https://content.pivotal.io/springone-platform-2017/reactive-spring-josh-long-mark-heckler)
 5. [TestContainers](https://www.testcontainers.org)
+6. [Reactive workshop with Spring Reactor](https://reactor.github.io/head-first-reactive-with-spring-and-reactor/)
+7. [BlockHound](https://github.com/reactor/BlockHound)
