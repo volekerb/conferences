@@ -21,9 +21,3 @@ IDEA Plugin: https://plugins.jetbrains.com/plugin/13267-qa-lithium
 TestContainers: https://www.testcontainers.org/
 
 Talk TestContainers: https://jokerconf.com/2019/talks/39aujaejphzzbscfgs7c9j/
-
-Flutter testing: https://blog.usejournal.com/integration-and-unit-testing-in-flutter-f08e4bd961d5 
-
-Dart/Flutter testing tools: https://dart.dev/guides/testing 
-
-Video about Dart/Flutter testing: https://www.youtube.com/watch?v=bj-oMYyLZEY 
